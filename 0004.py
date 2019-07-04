@@ -1,4 +1,4 @@
-import math_lib as math_lib
+import euler_lib as euler_lib
 
 """
 A palindromic number reads the same both ways. 
@@ -12,7 +12,7 @@ largest_palindrome = 0
 # HACK this looks pretty ugly
 for x in range(100,1000):
     for y in range(100,1000):
-        if math_lib.is_palindrome(x*y):
+        if euler_lib.is_palindrome(x*y):
             if x*y > largest_palindrome:
                 largest_palindrome = x*y
 
