@@ -43,3 +43,19 @@ def prime_factors(n):
             n = n / i
     
     return factors
+
+def is_palindrome(n):
+    """
+    Returns true/false if a number (or string) is a palindrome
+    """
+
+    string = str(n)
+    reversed_string = str(n)[::-1]
+
+    length = len(string)
+
+    for position in range(length):
+        if string[position] != reversed_string[position]:
+            return False
+    
+    return True
